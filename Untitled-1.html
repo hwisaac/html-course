@@ -6,16 +6,30 @@
 
     </head>
     <body>
-        <h1>Welcome to Web coffee!</h1>
+        <!-- td태그에서 rowspan 과 colspan 사용법-->
+        <table border="1">
+                <tr>
+                <td>컬럼1</td>
+                <td>컬럼2</td>
+                <td>컬럼3</td>
 
-        <img src="1200.jpg" width="500" height="500">
+                </tr>
+                <tr>
+                <td rowspan="2">row1 cell1</td>
+                <td>row1 cell2</td>
+                <td>row1 cell3</td>
 
-        <p>하우스 로스팅 원두의 신선한 커피를 맛보고 싶다면 공인ㅇ 1급 바리스타가 최고급 원두만을 직접 엄선
+                </tr>
+                <tr>
+                    <td>row2 cell2</td>
+                    <td>row2 cell3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">row3 cell1</td>
+                </tr>
 
-        <h2>메뉴</h2>
-        <p /> 메뉴에 대해 자세히 알고싶으시면 <a href="menu.html" target="_blanc">여기</a>를 클릭하세요.
+        </table>
 
-        <h2>이부분 추가했음</h2>
     </body>
 
 </html>
