@@ -15,9 +15,39 @@
             시간: <input type="time"> <br>
             레인지: <input type="range" min="1" max="100" step="5"><br>
             숫자: <input type="number" min="1" max="100" step="5"><br>
-            버튼: <input type="submit" value="누르세요"> <br>
+            버튼: <input type="submit" value="누르세요" onclick="alert('경고메세지 입니다')"> <br> <!--버튼 클릭시 경고-->
             패스워드 : <input type="password"> <br>
-            히든: <input type="hidden"> <!--보이진 않지만 서버로 전송됨-->
+            히든: <input type="hidden"> <!--보이진 않지만 서버로 전송됨--> <br>
+            체크박스 : <input type="checkbox" checked><br><br>
+            <hr />
+            라디오: <input type="radio" name="gender"> 남성
+                    <input type="radio" name="gender"> 여성 <br>
+
+            label: <label for="male">남성</label>
+                    <input type="radio" name="gender2" id="male"> 
+                    <input type="radio" name="gender2" id="female" >
+                    <label for="female">여성</label>
+                     (글씨 눌러도 radio 선택)
+            
+            <br><br>
+            이미지 버튼 : <input type="image" src="imgs/img1.jpg" width="100" height="100" onclick="alert('이미지버튼 누름')"> <br>
+            버튼 타입2: <button type="submit" onclick="alert('타입2')">안녕하세요</button>
+            <br><br>
+            textarea: <textarea rows="5" cols="50"></textarea> <br>
+            select: <select name="cars">
+                        <option value="bmw">비엠덥</option>
+                        <option value="benz">벤츠</option>
+                        <option value="hyundai" selected>현대</option>
+                    </select><br>
+            
+            fieldset : <fieldset>
+                        <legend>레전드</legend>
+                        이름: <input type="text"><br>
+                        전화번호: <input type="number"><br>
+                
+            file: <input type="file" accept="image/jpg,image/gif">
+
+            </fieldset>
 
         </form>
 
