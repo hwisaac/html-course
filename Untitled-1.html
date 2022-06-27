@@ -6,36 +6,39 @@
         <link type="text/css" rel="stylesheet" href="style.css">
         <style>
             
-            h1, div, p, em{
-                border: 2px dotted red;
+            ul.style1{list-style-type: square;
             }
-
-            p{
-                text-align: center;
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            
+            ol.style2{list-style-image: url(imgs/icon2.png);
             }
-
-
-            div, h1{
-                margin: auto;  /*마진으로 중앙정렬하기*/
-                width: 40%
-                
-            }
-
-
-
 
         </style>
     </head>
     <body>
-        <h1>h1 에 마진 auto 적용시</h1>
-        <div>&lt;div&gt; 에 마진 auto 적용시</div>
+        <ul class="style1">
+            <li>
+                안녕하세요
+            </li>
+            <li>
+                안녕하십니까
+            </li>
+            <li>
+                그러세요
+            </li>
 
+        </ul><br>        
+        <ol class="style2">
+            <li>
+                안녕하세요
+            </li>
+            <li>
+                안녕하십니까
+            </li>
+            <li>
+                그러세요
+            </li>
 
-        <p>&lt;p&gt;중앙 정렬합시다. <em>이것은 em</em> 입니다. &quot; </p>
+        </ol>
+
 
 
 
