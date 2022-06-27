@@ -2,46 +2,235 @@
 <html>
     <head>
 
-        <title>중앙 정렬시키기 제목</title>
+        <title>표 스타일</title>
         <link type="text/css" rel="stylesheet" href="style.css">
         <style>
             
-            ul.style1{list-style-type: square;
+            table.type01 {
+            border-collapse: collapse;
+            text-align: left;
+            line-height: 1.5;
+            border-left: 1px solid #ccc;
+            margin: 20px 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
             }
-            ol.style2{list-style-image: url(imgs/icon2.png);
+
+            table.type01 thead th {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-bottom: 2px solid #c00;
+            background: #dcdcd1;
             }
+            table.type01 tbody th {
+            width: 150px;
+            padding: 10px;
+            font-weight: bold;
+            vertical-align: top;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            background: #ececec;
+            }
+            table.type01 td {
+            width: 350px;
+            padding: 10px;
+            vertical-align: top;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            }
+
+            table.type02 {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+table.type02 thead th {
+    text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 111, 172);
+  border-bottom: 3px solid #036;
+}
+table.type02 tbody th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+table.type02 td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+table.type03 {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table.type03 thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+table.type03 th,
+table.type03 td {
+    padding: 12px 15px;
+}
+table.type03 tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table.type03 tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table.type03 tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+table.type03 tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
 
         </style>
     </head>
     <body>
-        <ul class="style1">
-            <li>
-                안녕하세요
-            </li>
-            <li>
-                안녕하십니까
-            </li>
-            <li>
-                그러세요
-            </li>
+        <table class="type01">
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+                <th>제목3</th>
+            </tr>
+            <tr>
+                <td>내용1</td>
+                <td>내용12</td>
+                <td>내용1</td>
+                <td>내용1</td>
+            </tr>
+            <tr>
+                <td>내용2</td>
+                <td>내용2</td>
+                <td>내용2</td>
+                <td>내용2</td>
+            </tr>
 
-        </ul><br>        
-        <ol class="style2">
-            <li>
-                안녕하세요
-            </li>
-            <li>
-                안녕하십니까
-            </li>
-            <li>
-                그러세요
-            </li>
+        </table>
 
-        </ol>
+        
+<table class="type01">
+  <thead>
+  <tr>
+    <th >타이틀</th>
+    <th >내용</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+    <th >항목명</th>
+    <td>내용이 들어갑니다.</td>
+  </tr>
+  <tr>
+    <th >항목명</th>
+    <td>내용이 들어갑니다.</td>
+  </tr>
+  <tr>
+    <th >항목명</th>
+    <td>내용이 들어갑니다.</td>
+  </tr>
+  </tbody>
+</table>
 
 
+<table class="type02">
+    <thead>
+    <tr>
+      <th >타이틀</th>
+      <th>내용</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th >항목명</th>
+      <td>내용이 들어갑니다.</td>
+    </tr>
+    <tr>
+      <th >항목명</th>
+      <td>내용이 들어갑니다.</td>
+    </tr>
+    <tr>
+      <th>항목명</th>
+      <td>내용이 들어갑니다.</td>
+    </tr>
+    </tbody>
+  </table>
 
+  <table class="type03">
+    <thead>
+    <tr>
+      <th >타이틀</th>
+      <th >내용</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th >항목명</th>
+      <td>내용이 들어갑니다.</td>
+    </tr>
+    <tr>
+      <th >항목명</th>
+      <td>내용이 들어갑니다.</td>
+    </tr>
+    <tr class="active-row">
+      <th scope="row">항목명</th>
+      <td>내용이 들어갑니다.</td>
+    </tr>
+    </tbody>
+  </table>
 
+  <table class="type03">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dom</td>
+            <td>6000</td>
+        </tr>
+        <tr class="active-row">
+            <td>active-row</td>
+            <td>5150</td>
+        </tr>
+        <tr>
+            <td>항목명</td>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <td>항목ㅁㅁ</td>
+            <td>내용2</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
+</table>
+  
     </body>
 
 </html>
