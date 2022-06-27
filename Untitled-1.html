@@ -2,39 +2,41 @@
 <html>
     <head>
 
-        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Kirang+Haerang&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Kirang+Haerang&family=Single+Day&display=swap" rel="stylesheet">
-
-        <title>연습 페이지 제목</title>
+        <title>중앙 정렬시키기 제목</title>
         <link type="text/css" rel="stylesheet" href="style.css">
         <style>
             
-
-            div{
-                border: 50px solid transparent;
-                width:3030 px;
-                height: 340 px;
-                border-image: url(imgs/border.png) 27 27 round; /* 브라웅저마자 다름  */
-
+            h1, div, p, em{
+                border: 2px dotted red;
             }
+
+            p{
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            
+            }
+
+
+            div, h1{
+                margin: auto;  /*마진으로 중앙정렬하기*/
+                width: 40%
+                
+            }
+
 
 
 
         </style>
     </head>
     <body>
-        asfdasf
-        <div>경계 이미지 반복시키기 <br>  
-            경계 이미지 반복시키기 <br>  
-            경계 이미지 반복시키기 <br>  
-            경계 이미지 반복시키기 <br>  
-            경계 이미지 반복시키기 <br>  
-            경계 이미지 반복시키기 <br>  
-            경계 이미지 반복시키기 <br>  경계 이미지 반복시키기 <br>  
-            경계 이미지 반복시키기 <br>  
-        </div>
-        sadsdfas
+        <h1>h1 에 마진 auto 적용시</h1>
+        <div>&lt;div&gt; 에 마진 auto 적용시</div>
+
+
+        <p>&lt;p&gt;중앙 정렬합시다. <em>이것은 em</em> 입니다. &quot; </p>
+
 
 
     </body>
