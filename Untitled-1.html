@@ -3,39 +3,37 @@
     <head>
         <title>연습</title>
         <style>
-            table{
-                empty-cells:hide;
-                background-color: yellow;
-                border: 3px solid black;
-                font-size: 2em;
-            }
-            table tr th{
+            div{
                 background-color: red;
-                border: 3px solid black;
+                width: 300px;
+                height: 300px;
+                left: 30px;
+                top: 30px;
+
+                transition: width 5s, height 5s, transform 5s, background-color 5s;
             }
-            table td{
-                border: 3px solid black;
+
+            div:hover{
+                width: 600px;
+                height: 600px;
+                background-color: yellow;
+                
+                
+                transform: rotate(360deg);  /* rotate와 translate 동시에 못씀. 매트릭스 이용해야 될듯*/
+                
+
             }
-            
+
 
         </style>
         
     </head>
     <body>
-        <table >
-            <tr>
-                <th>1</th>
-                <th rowspan="2">2</th>
-                <th>3</th>
-                <th>4</th>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td></td>
-                <td></td>
-            </tr>
 
-        </table>
+        <div class="tf">
+        </div>
+        
+
     </body>
 
 </html>
