@@ -3,22 +3,18 @@
     <head>
         <title>연습</title>
         <style>
-            p{
-                font-size: 30px;
-                color:blue;
-                margin: 50px;
+            table{
+                empty-cells:hide;
+                background-color: yellow;
+                border: 3px solid black;
+                font-size: 2em;
             }
-
-            em.ema{
-                color: red;
-                font-weight: bold;
-                border-right: 1px solid black;
-                padding: 10px;
+            table tr th{
+                background-color: red;
+                border: 3px solid black;
             }
-            em.eme{
-                font-weight: bold;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+            table td{
+                border: 3px solid black;
             }
             
 
@@ -26,11 +22,20 @@
         
     </head>
     <body>
-        
-        <p class="cont"><em class="ema">1.</em> <em class="eme">HTML5</em>로 문서의 내용을 정의한다.</p>
-        <p class="cont"><em class="ema">2.</em> <em class="eme">CSS3</em>로 문서의 스타일을 정의한다.</p>
-        <p class="cont"><em class="ema">3.</em> <em class="eme">Javascript</em>로 문서의 동작을 정의한다.</p>
+        <table >
+            <tr>
+                <th>1</th>
+                <th rowspan="2">2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+            </tr>
 
+        </table>
     </body>
 
 </html>
