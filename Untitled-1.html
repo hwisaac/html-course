@@ -3,49 +3,32 @@
     <head>
         <title>연습</title>
         <style>
-            div#first{
+            div{
                 background-color: yellow;
-                width : 99%;
-                height: 70px;
-
-            }
-            div#second{
-                background-color: red;
-                width: 99%;
-                height: 70px;
+                border: 3px solid black;
+                width : 50px;
+                height: 50px;
+                position: relative;
+                animation: 5s keyy;
+                animation-iteration-count: 10;
             }
 
-            #third{
-                background-color: blue;
-                float: left;
-                width: 33%;
-                height: 800px;
+            @keyframes keyy {
+                0% {left: 0px; top: 0px;}
+                25% {left: 200px; top: 0px;}
+                50% {left: 200px; top: 200px;}
+                70% {left: 0px; top: 200px;}
+                100% {left: 0px; top: 0px;}
+                
             }
-            #fourth{
-                background-color: green;
-                float:left;
-                width: 33%;
-                height: 800px;
-            }
-            #fifth{
-                background-color: purple;
-                float:left;
-                width: 33%;
-                height: 800px;
-            }
-
         </style>
         
     </head>
     <body>
 
-        <div id="first">first</div>
-        <div id="second">second</div>
-        <div id="third">third</div>
-        <div id="fourth">fourth</div>
-        <div id="fifth">fifth</div>
         
-        header nav aside 등을 사용하면 이상하게 잘 구현이 안됨 
+        <div>a</div>
+        
         
 
     </body>
