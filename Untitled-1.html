@@ -3,69 +3,67 @@
     <head>
         <title>연습</title>
         <style>
-
-
-            #main{
-                position:absolute;
-                right: 100px;
-                top: 100px;
-                width: 600px;
-                height: 600px;
-                border: 3px solid black;
-
-            }
-
-            #first{
-                position: relative;
-                width: 300px;
-                height: 300px;
+            header{background-color: orange; width: 99%;
+            height: 100px;}
+            nav{background-color: burlywood;width: 99%;
+            height: 100px;}
+            aside{
                 background-color: pink;
-                left:0; top:0;
-
+                height: 300px;
+            }
+            #main{
+                width: 99%;
+                display: table;
+            }
+            #left{
                 float: left;
+                width: 20%;
+                
             }
-
-            #second{
+            #right{
+                float: right;
+                width: 20%;
+            }
+            section{
+                background-color: lime;
+                display:block;
+                width: 80%;
+                height:300px;
+                
+            }
+            article{
+                background-color: aqua;
+                display:inline-block;           
                 position: relative;
-                width: 300px;
-                height: 300px;
-                background-color:azure;
-                right:0px; top:0px;
-                display:inline-block;
-
+                height: 100px;
+                width: 75%;
 
             }
-            #third{
-                position: relative;
-                width: 300px;
-                height: 300px;
-                background-color: greenyellow;
-                left:0px; bottom:0px;
-
-                float: left;
-
+            footer{
+                background-color: peru;
+                width: 99%;
+                height: 100px;
             }
-            #fourth{
-                position: relative;
-                width: 300px;
-                height: 300px;
-                background-color:blanchedalmond;
-                right:0px; bottom:0px;
-                display:inline-block;
 
-            }
         </style>
         
     </head>
     <body>
 
+    <header>haeder</header>        
+    <nav>nav
+    </nav>
         <div id="main">
-            <div id="first">float: left 가 없었으면 정렬이 안됨.</div>
-            <div id="second">(second)display:inline-block 가 없었으면 정렬이 안됨</div>
-            <div id="third">third</div>
-            <div id="fourth">4th</div>
-        </div>
+
+        <aside id="left">(aside left)</aside>
+        <aside id="right">(aside right)</aside>
+
+        <section>section<br>
+            <article>article</article>
+        </section>
         
+        </div>
+    <footer>footer</footer>
 
     </body>
 
