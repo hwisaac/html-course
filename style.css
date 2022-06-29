@@ -1,3 +1,123 @@
 /* css 주석입니다 */
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: orange; 
+    width: 99%;
+    height: 60px;
+    margin: 10px;
+}
+h4{
+    background-color: blanchedalmond;
+    font-size: 1.3em;
+    font-weight: bold;
 
 
+}
+nav{
+    background-color: burlywood;
+    width: 99%;
+}
+aside{
+    background-color: pink;
+    height: 300px;
+}
+aside ul{
+}
+aside ul li{
+    list-style: none;
+    background-color:rgb(38, 38, 51);
+    border: 0.5px solid black;
+    color: white;
+
+}
+aside#left ul li a{
+    color : white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+aside ul li:hover{
+    background-color: red;
+}
+div#center{
+    width: 99%;
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #464646;
+}
+#left{
+    float: left;
+    width: 20%;
+    
+}
+#right{
+    float: left;
+    width: 20%;
+}
+section{
+    float: left;
+    background-color: lime;
+    display:block;
+    height:300px;
+    overflow: hidden;
+
+    
+}
+article{
+    background-color: aqua;
+    display:inline-block;           
+    position: relative;
+
+    width: 75%;
+
+}
+footer{
+    background-color: peru;
+    width: 99%;
+    height: 100px;
+    clear:both;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding : 30px 0;
+}
+nav ul li{
+    display : inline;
+    padding: 0 10px; /*상하 0px, 좌우 10px*/
+    text-transform: uppercase;
+}
+nav a{
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover{
+
+    color: red;
+    text-decoration: underline;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+#shopcart{
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+#login{
+    margin-top: 40px;
+    padding : 10px 0;
+}
+footer{
+    width: 100%;
+    clear: both; /*안해주면 위로 붙을수가 있음*/
+    
+}
