@@ -21,7 +21,7 @@ nav{
     width: 99%;
 }
 aside{
-    background-color: pink;
+
     height: 300px;
 }
 aside ul{
@@ -119,5 +119,5 @@ nav ul li a{
 footer{
     width: 100%;
     clear: both; /*안해주면 위로 붙을수가 있음*/
-    
+
 }
