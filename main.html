@@ -5,27 +5,42 @@
         <title>메인</title>
         <script>
 
-            function cal(){
-                var x = document.getElementById("x").value;
-                var y = document.getElementById("y").value;
+            
+
+            function ft(){
                 
-                var sum= parseInt(x)+ parseInt(y);  //text 타입을 parseInt 함수로 숫자 타입으로 바꿈
+                var input = parseInt(document.getElementById("input").value);
+                var fail = parseInt(document.getElementById("fail").value );
                 
-                document.getElementById("sum").value = sum;  // sum 변수값을 문서의.sum아이디요소중.value 에 대입한다
+                if (input ==85){
+                    document.getElementById("ans").value="정답입니다!"    
+                    document.getElementById("ans").style.color= "red";
+
+                }else if (input>85){
+                    document.getElementById("ans").value="정답보다 커요!!"
+                    document.getElementById("fail").value = fail + 1 ;
+                    document.getElementById("ans").style.color= "black";
+                    
+                }else if (input<85){
+                    document.getElementById("ans").value="정답보다 작아요!!"
+                    document.getElementById("fail").value = fail + 1 ;
+                    document.getElementById("ans").style.color= "black";
+                }
+
+                return true;
             }
-            
-            
         </script>
 
         
     </head>
     <body>
-        <h1>덧셈 계산기</h1>
-        <p> 첫번째 정수 : <input id="x"/></p>
-        <p> 두번째 정수 : <input id="y" /></p>
-        <p> 합계 : <input type="text" id="sum" /></p>
-        <p> <button onclick="cal();"> 계산</button></p>
 
+        <h1> 숫자 맞추기 게임</h1>
+        <p> 숫자는 1~100 사이에 있음 </p>
+        <p> 숫자: <input type=text id="input"> <button type="button" onclick="ft()">확인</button> </p>
+        <br>
+        추측횟수: <input type="text" id="fail" value="0"> <br>
+        힌트: <input type=text" id="ans" value="대기중....">
     </body>
 
 </html>
