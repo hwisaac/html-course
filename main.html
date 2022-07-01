@@ -1,46 +1,34 @@
 <!doctype html>
 <html>
     <head>
-        
-        <title>메인</title>
-        <script>
 
-            
-
-            function ft(){
-                
-                var input = parseInt(document.getElementById("input").value);
-                var fail = parseInt(document.getElementById("fail").value );
-                
-                if (input ==85){
-                    document.getElementById("ans").value="정답입니다!"    
-                    document.getElementById("ans").style.color= "red";
-
-                }else if (input>85){
-                    document.getElementById("ans").value="정답보다 커요!!"
-                    document.getElementById("fail").value = fail + 1 ;
-                    document.getElementById("ans").style.color= "black";
-                    
-                }else if (input<85){
-                    document.getElementById("ans").value="정답보다 작아요!!"
-                    document.getElementById("fail").value = fail + 1 ;
-                    document.getElementById("ans").style.color= "black";
-                }
-
-                return true;
-            }
-        </script>
 
         
     </head>
     <body>
 
-        <h1> 숫자 맞추기 게임</h1>
-        <p> 숫자는 1~100 사이에 있음 </p>
-        <p> 숫자: <input type=text id="input"> <button type="button" onclick="ft()">확인</button> </p>
-        <br>
-        추측횟수: <input type="text" id="fail" value="0"> <br>
-        힌트: <input type=text" id="ans" value="대기중....">
+        <script>
+            var startTime = new Date();
+            var nowTime;
+            var i, sum;
+            sum=0;
+
+            for (i=1;  i<=1000000 ; i++){
+
+                sum += i;
+            }
+
+            nowTime= new Date();
+
+            i=startTime.getTime();
+            sum= nowTime.getTime();
+
+            document.write(sum-i, "ms 입니다<br>");
+
+            
+
+        </script>
     </body>
+
 
 </html>
