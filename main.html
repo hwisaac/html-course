@@ -8,15 +8,14 @@
     <body>
 
         <script>            
-            function strCap(st){
-                var x=  st.split("");
+            function ft(){
+                var x =  new Date();
+                var y=  ['1월', '2월', '3월', '4월', '5월','6월', '7월', '8월', '9월','10월','11월','12월'];
                 
-                x[0] = x[0].toUpperCase();
-
-                document.write(x.join(""));
+                document.write( y[x.getMonth()]);
             }
             
-            strCap("hello");
+            ft();
 
         </script>
     </body>
