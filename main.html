@@ -7,16 +7,24 @@
     </head>
     <body>
 
-        <script>            
-            function ft(){
-                var x= (Math.random()*10) ;
-                var y= ["사과", "오렌지", "귤", "당근", "케일"];
+        <script>
+                        
+            function find(arr, value){
+                var i;
 
-                document.write(x,"<br>" ,Math.round(x),"<br>" , y[Math.round(x)%5] );
+                for (i=0; i < arr.length  ; i++){
+                    if (arr[i] == value) {
+                        document.write(i);
+                        break;
+                    }
+                }
 
             }
+
+            var arr = ['a',12314,12.4,"hello", 10, 32.6, true];
+
             
-            ft();
+            find(arr, "hello");
 
         </script>
     </body>
