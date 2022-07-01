@@ -8,17 +8,15 @@
     <body>
 
         <script>            
-            function ft(arr){
-                document.write(arr, "<br>");
-            }
+            function ft(){
+                var x= (Math.random()*10) ;
+                var y= ["사과", "오렌지", "귤", "당근", "케일"];
 
-            var arr = ["터미네이터", "트랜스포머"];
-            ft(arr);
-            arr.push("맨오브스틸")
-            ft(arr);
-            arr[arr.length-2] = "스파이더맨"
-            ft(arr);
-            alert(arr.pop());
+                document.write(x,"<br>" ,Math.round(x),"<br>" , y[Math.round(x)%5] );
+
+            }
+            
+            ft();
 
         </script>
     </body>
