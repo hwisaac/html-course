@@ -8,14 +8,17 @@
     <body>
 
         <script>            
-            function ft(){
-                var x =  new Date();
-                var y=  ['1월', '2월', '3월', '4월', '5월','6월', '7월', '8월', '9월','10월','11월','12월'];
-                
-                document.write( y[x.getMonth()]);
+            function ft(arr){
+                document.write(arr, "<br>");
             }
-            
-            ft();
+
+            var arr = ["터미네이터", "트랜스포머"];
+            ft(arr);
+            arr.push("맨오브스틸")
+            ft(arr);
+            arr[arr.length-2] = "스파이더맨"
+            ft(arr);
+            alert(arr.pop());
 
         </script>
     </body>
