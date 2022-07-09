@@ -1,45 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <script>
-                        
-            function ft(){
-                var da = new Date();
-                var months, dates, days, hours, minutes, seconds;
-                montes = da.getMonth();
-                dates = da.getDate();
-                days = da.getDay();
-                hours = da.getHours();
-                minutes = da.getMinutes();
-                seconds = da.getSeconds();
-                
+  <head>
+    <link rel="stylesheet" href="style.css"
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+  </head>
 
-                document.write( montes ,"월 " );
-                document.write( dates ,"일<br>" );
-                
-                document.write( hours ,"시<br>" );
-                document.write( minutes ,"분<br>" );
-                document.write( seconds, "초<br>" );
-                Document.clear;
-                
-
-            }
-
-            ft();
-            /* setTimeout 을 이용한 자동 새로고침 */
-            
-            setTimeout( function(){ 
-                                    location.reload();
-                                    }
-                        ,1500); // 1500초 마다 리프래쉬
-        </script>
-
-
-        
-    </head>
-    <body>
-        
-    </body>
-
-
+  <body>
+    <h2>Hell2o</h2>
+    <p>Resize the browser window to fire the <code>resize</code> event.</p>
+<p>Window height: <span id="height"></span></p>
+<p>Window width: <span id="width"></span></p>
+    <script src="script.js"></script>
+    
+  </body>
 </html>
