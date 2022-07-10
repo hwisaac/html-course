@@ -1,3 +1,21 @@
+<<<<<<< HEAD
 li:nth-child(2){
     background-color: red;
+=======
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+
+h2 {
+    border: 1px solid red;
+>>>>>>> 6275aab3042697dab40e5fba08226ade36fdadae
 }
