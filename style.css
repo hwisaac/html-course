@@ -1,21 +1,70 @@
-<<<<<<< HEAD
-li:nth-child(2){
-    background-color: red;
-=======
-.yellow {
-    background-color: yellow;
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+body{
+    background-color: rgba(0,0,0,0.05);
+}
+h2{
+    text-align: center;
+    
 }
 
-.purple {
-    background-color: purple;
+section {
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
 }
 
-.blue {
-    background-color: blue;
+
+.row {
+    width: 450px;
+    height: 360px;
+
+    margin-top: 30px;
+    display: flex;
+}
+
+.row__cloumn {
+    width: 210px;
+    height: 350px;
+    margin: 10px;
+    border: 5px solid white;
+
+    
+}
+.row__cloumn__Name {
+    font-size: 30px;
+    
 }
 
 
-h2 {
-    border: 1px solid red;
->>>>>>> 6275aab3042697dab40e5fba08226ade36fdadae
+span {
+    display: flex;
+    background-color: white;
+    height: 50px;
+    padding-left: 10px;
+
+    align-items: center;
+    
+    
+}
+.row__cloumn__Name {
+    margin-top: 20px;
+}
+
+section > .row:nth-child(1) div:nth-child(1){
+    background-color: tomato;
+}
+.row:nth-child(1) div:nth-child(2){
+    background-color: teal;
+}
+.row:nth-child(2) div:nth-child(1){
+    background-color: burlywood;
+}
+.row:nth-child(2) div:nth-child(2){
+    background-color: thistle;
 }
