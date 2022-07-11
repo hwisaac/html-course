@@ -1,12 +1,21 @@
-const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input");
+const maxNum = document.querySelector(".maxNum");
+const guessingNum = document.querySelector(".guessingNum");
+const playBtn = document.querySelector(".playBtn");
+const result = document.querySelector(".result");
+const outcome = document.querySelector(".outcome");
 
-function onLoginSubmit(event) {
-    // preventDefault는 event의 기본행동이든지 발생되지 않도록 막는다.
-    // 토마토 대신 event를 쓴다
+function play(event) {
+    const ranNum = Math.floor(maxNum.value * Math.random());
     event.preventDefault(); 
+    
+    result.innerHTML= `your chose: ${guessingNum.value} ,the machine chose:${ranNum}`;
 
-    console.log(loginInput.value);
+    if (ranNum == guessingNum.value ){
+        outcome.innerHTML = "<em style='color:red'>YOU WON!</em>"
+    } else {
+        outcome.innerHTML = "You lost!"
+    }
+
 }
 
-loginForm.addEventListener("submit", onLoginSubmit);
+playBtn.addEventListener("click", play);
