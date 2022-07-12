@@ -1,21 +1,19 @@
-const maxNum = document.querySelector(".maxNum");
-const guessingNum = document.querySelector(".guessingNum");
-const playBtn = document.querySelector(".playBtn");
-const result = document.querySelector(".result");
-const outcome = document.querySelector(".outcome");
+// 스트링은 대문자로 저장한다
+const HIDDEN_CLASSNAME = "hidden";
+const loginForm = document.querySelector('#login-form');
+const loginInput = document.querySelector('#login-form input');
+const greeting = document.querySelector('#greeting');
 
-function play(event) {
-    const ranNum = Math.floor(maxNum.value * Math.random());
-    event.preventDefault(); 
-    
-    result.innerHTML= `your chose: ${guessingNum.value} ,the machine chose:${ranNum}`;
+function onLoginSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
 
-    if (ranNum == guessingNum.value ){
-        outcome.innerHTML = "<em style='color:red'>YOU WON!</em>"
-    } else {
-        outcome.innerHTML = "You lost!"
-    }
+    // 로컬스토리지에 저장할 수 있다. localStorage.setItem("키", "벨류")
+    localStorage.setItem("username", username);
+    greeting.innerText = `Hello ${username}` ;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 
 }
 
-playBtn.addEventListener("click", play);
+loginForm.addEventListener("submit", onLoginSubmit);
