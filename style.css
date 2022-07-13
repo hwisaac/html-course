@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html,
 body {
   height: 100%;
@@ -84,3 +85,8 @@ Remove 'animation-delay and see what happens!!!
 .line:nth-child(5) {
   animation-delay: 0.4s;
 }
+=======
+.hidden {
+    display: none;
+}
+>>>>>>> 3eb134308e0a3be38402050024573bfd1c72cbaf
