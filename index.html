@@ -3,59 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>You Are Awesome!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <i class="fas fa-times"></i>
-        <h1>Playlist</h1>
+    <div class="page">
+      <header class="header">
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
       </header>
-      <main>
-        <section class="main-song">
-          <div class="main-song__cover">
-            <i class="far fa-image fa-3x"></i>
+      <div class="circle-img"><img src="imgs/img1.jpg" ></div>
+      <div class="title">
+        <h1 class="title__song">Tyler, THe Creator</h1>
+        <h2 class="title__genre">Rap, Hip-Hop</h2>
+      </div>
+      <div class="btns">
+        <button>Shuffle</button>
+        <button>
+          <i class="fa-solid fa-heart"></i>
+          212 971
+        </button>
+      </div>
+      <div class="lists">
+        <div class="list">
+          <img src="imgs/img1.jpg">
+          <div class="list__contents">
+          <div class="list__texts">
+            <h3>Tyler, the Creator</h3>
+            <h4>EARFQUAKE</h4>
           </div>
-          <div class="main-song__data">
-              <h3 class="main-song__title">We Love 김치!</h3>
-              <h5 class="main-song__author">By Lynn</h5>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
           </div>
-        </section>
-        <section class="btns">
-          <span class="btns__btn btns__btn--big">
-            <i class="fas fa-play fa-xs"></i>
-            <span>Play</span>
-          </span>
-          <span class="btns__btn"><i class="fas fa-heart"></i></span>
-          <span class="btns__btn"><i class="fas fa-plus"></i></span>
-        </section>
-        <ul class="song-list">
-          <li class="song-list__song">
-            <div class="song-list__cover"></div>
-            <div class="song-list__data">
-                <h5>Corona Sucks</h5>
-                <h6>니꼬</h6>
-            </div>
-          </li>
-          <li class="song-list__song">
-            <div class="song-list__cover"></div>
-            <div class="song-list__data">
-                <h5>Corona Sucks</h5>
-                <h6>니꼬</h6>
-            </div>
-          </li>
-          <li class="song-list__song">
-            <div class="song-list__cover"></div>
-            <div class="song-list__data">
-                <h5>Corona Sucks</h5>
-                <h6>니꼬</h6>
-            </div>
-          </li>
-        </ul>
-      </main>
+
+        </div>
+
+      </div>
+
+
     </div>
+
+    <script src="https://kit.fontawesome.com/042e7c67c3.js" crossorigin="anonymous"></script>
   </body>
 </html>
