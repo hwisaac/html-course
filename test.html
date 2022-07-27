@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        ol{
+        counter-reset: list-counter;
+        list-style: none;
+        
+        }   
+        ol li{
+            margin: 1.5em 0;
+            line-height: 1em
+        }
+        ol li:before{
+            content: counter(list-counter);
+            counter-increment: list-counter;
+            font-family: arial;
+            color:rgba(255,255,255,0.9);
+            background-color: black;
+            font: bold;
+            font-size: 2em;
+            margin-right: .5em;
+            padding: 0.05em;
+        }
+    </style>
+</head>
+<body>
+    
+    <ol class="large">
+        <li> 헬로</li>
+        <li>ㅇㅇㅁㅇ</li>
+        <li>dadfs</li>
+    </ol>
+    <ul class="large">
+        <li> 헬로</li>
+        <li>ㅇㅇㅁㅇ</li>
+        <li>dadfs</li>
+    </ul>
+</body>
+</html>
