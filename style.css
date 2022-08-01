@@ -5,56 +5,72 @@
 
 section {
   display: grid;
-  grid-template-columns: repeat(4, 10%);
-  grid-template-rows: repeat(4, 100%);
+  height: 100vh;
+  grid-template: 
+  "black blue speakers artists" 1fr
+  "red white speakers artists" 1fr
+  "red yellow speakers artists" 1fr
+  /* 아래는 컬럼 길이 */
+  / 1fr 1fr 1fr 1fr;
   
+
 }
 div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px;
   font-weight: 600;
-  font-size: 30px;
 }
-div:nth-child(1){
-  grid-column: 1/3;
-  grid-row: 1/3;
-  background-color: #DAE7DE;
-  color: #f74000;
+.flip{
+  display: inline-flex;
+  color: red;
+  transform: scale(1, -1);
 }
-div:nth-child(2){
-  background-color: #008A69;
+.black {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  grid-area: black;
   color: white;
-  grid-column: 3/5;
-  grid-row: 1/3;
+  background-color: black;
 }
-div:nth-child(3){
-  grid-column: 1/3;
-  grid-row: 3/-1;
-  background-color: #F44607;
-  color: white;
+.blue{
+  grid-area: blue;
+  background-color: #6C01FF;
 }
-div:nth-child(4){
-  grid-column: 3/4;
-  grid-row: 3/4;
-  background-color: #EFAFD1;
-  color: #F44607
+.red{
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  grid-area: red;
+  background-color: red;
+  color: black;
 }
-div:nth-child(5){
-  grid-column: 4/5;
-  grid-row: 3/4;
-  background-color: #5F5FA8;
-  color: white;
+.white{
+  grid-area: white;
 }
-div:nth-child(6){
-  grid-column: 3/4;
-  grid-row: 4/5;
-  background-color: #FFC028;
-  color: var(--color-orange);
+.yellow{
+  font-size: 40px;
+  grid-area: yellow;
+  background-color: #FFC904;
+  
 }
-div:nth-child(7){
-  grid-column: 4/5;
-  grid-row: 4/5;
-  background-color: #F97374;
-  color: white;
+
+h4 {
+  margin: 10px 0px;
+  font-size: 13px;
+}
+.speakers{
+
+  grid-area: speakers;
+}
+li{
+  margin: 5px 0px;
+  padding: 2px 0px;
+}
+.artists{
+
+  grid-area: artists;
+}
+
+li.highlight {
+  background-color: #6C01FF;
 }
