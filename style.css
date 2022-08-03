@@ -1,76 +1,125 @@
 :root {
- --color-white : #ECDACF;
- --color-orange: #F44607;
+ --color-white : #FFFDFD;
+ --color-orange: #FD6B3A;
+ --color-green: #46AB4F;
 }
 
 section {
-  display: grid;
+  display : flex;
+  flex-direction: column;
   height: 100vh;
-  grid-template: 
-  "black blue speakers artists" 1fr
-  "red white speakers artists" 1fr
-  "red yellow speakers artists" 1fr
-  /* 아래는 컬럼 길이 */
-  / 1fr 1fr 1fr 1fr;
-  
+  width: 90vw;
+  color: var(--color-orange);
 
 }
-div{
-  padding: 10px;
+.top {  
+  width: 100vw;
+  height: 70px;
+  border: 5px solid var(--color-orange);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
 }
-.flip{
-  display: inline-flex;
-  color: red;
-  transform: scale(1, -1);
-}
-.black {
-  font-size: 40px;
+.main-container {
+  height: 90vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  grid-area: black;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 3vw auto 3vw;
+  grid-template-rows: 45vh 45vh;
+  grid-template-areas:
+  "left-top center right-top"
+  "left-bottom center right-bottom";
+
+}
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode:vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+.left:nth-child(1){
+  background-color: var(--color-orange);
+  grid-area: left-top;
   color: white;
-  background-color: black;
+
+
 }
-.blue{
-  grid-area: blue;
-  background-color: #6C01FF;
+.left:nth-child(2){
+  background-color: var(--color-white);
+  border: 3px solid var(--color-orange);
+  color: var(--color-orange);
+  grid-area: left-bottom;
+
 }
-.red{
-  font-size: 40px;
+
+.center:nth-child(3){
+  background-color: aqua;
+  grid-area: center;
+  color: white;
+  font-size: 200px;
   display: flex;
-  flex-direction: column;
-  grid-area: red;
-  background-color: red;
-  color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
-.white{
-  grid-area: white;
+.center img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.yellow{
-  font-size: 40px;
-  grid-area: yellow;
-  background-color: #FFC904;
-  
+.center span{
+  text-shadow: 2px 2px 2px gray; 
+  position: absolute;
+}
+.right{
+  border: 3px solid var(--color-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode:vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 5px;
+  font-weight: 600;
+
+}
+.right:nth-child(4){
+  background-color: var(--color-green);
+  grid-area: right-top;
+  color: white;
+}
+.right:nth-child(5){
+  background-color: var(--color-green);
+  grid-area: right-bottom;
+  color: white;
 }
 
-h4 {
-  margin: 10px 0px;
-  font-size: 13px;
-}
-.speakers{
-
-  grid-area: speakers;
-}
-li{
-  margin: 5px 0px;
-  padding: 2px 0px;
-}
-.artists{
-
-  grid-area: artists;
+.bottom{
+  width: 100vw;
+  height: 70px;
+  border: 5px solid var(--color-orange);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
 
-li.highlight {
-  background-color: #6C01FF;
+i {
+  display: flex;
+  position: relative;
+  left: 90vw;
+  bottom: 10vh;
+  color: white;
+  box-shadow:  5px 5px 5px 5px rgba(0,0,0,0.5);
+  z-index: 100;
+
+
 }
